@@ -3,18 +3,20 @@
 \usepackage{latexsym}
 \usepackage{graphicx}
 
-\title{情報科学演習及び実験1（Ocamlの基礎）}
-\author{IS2 6316047 出納 光}
+\title{計算機入門及び演習 (プログラミング言語 入門)}
+\author{IS1 6316047 出納 光}
 \begin{document}
 
 \maketitle
 
-\section{1. dellt}
+\section{課題}
 \begin{verbatim}
-# dellt;;
-- : int -> ’a list -> ’a list = <fun> 
-\\
-
+高さ H マス、横 5 マスのセルから成るパズルを作成する。
+各セルには 1 から 9 までの数字が書かれている石が配置されている。
+3 つ以上横方向にならんでいる石は取り除くことが出来る。
+すべての石を取り除いた後，取り除いた石の上に石がある場合は下に落ちて きて空いたマスを埋める。
+これを反復的に行い，石がもうとれない状態まで行う。
+取り除いた石に書かれている数字の合計が点数となる。
 \end{verbatim}
 
 \newpage
